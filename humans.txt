@@ -1,0 +1,7 @@
+/* TEAM */
+Designer: Grant Jeffery
+Location: Ottawa, ON
+/*SITE*/
+Last update: 11/12/2013
+Standards: HTML5, CSS3
+Components: Jquery, etc.
