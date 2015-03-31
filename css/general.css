@@ -137,9 +137,10 @@ input:active{
 }
 
 .socialbtns {
-	text-align:center;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	position: absolute;
+	bottom: 1em;
+	right: 2em;
+	width: 100%;
 }
 
 a {
@@ -148,8 +149,13 @@ a {
 }
 
 .social {
+	float: right;
 	margin-right: 15px;
 	margin-left: 15px;
+}
+
+.social img {
+	width: 40px;
 }
 
 footer {
@@ -187,14 +193,6 @@ footer {
 	}
 
 
-@media only screen and (min-width:400px) {
-
-	.platforms{
-	height: 200px;
-}
-}
-
-
 @media only screen and (min-width: 500px) {
 
 	input[type="text"] {
@@ -204,10 +202,6 @@ footer {
 	input[type="submit"] {
 		font-size: 18px;
 
-}
-
-.platforms{
-	height: 255px;
 }
 }
 
@@ -231,35 +225,10 @@ footer {
 		margin-top: 60px;
 }
 
-	.grid2 {
-		width: 100%;
-}
-
-	.platforms {
-		float:left;
-		height: 200px;
-		margin: 0%;
-		padding: 0%;
-		width: 33%;
-		background-image:none;
-
-}
-
-	.whitetext {
-}
-
-
-
-	.bottom {
-		margin: 0%;
-		float: right;
-		width: 66.66%;
-}
 }
 
 
 @media only screen and (min-width: 750px) {
-
 
 	.col 2-3 {
 		padding-top: 10%;
@@ -276,33 +245,8 @@ footer {
 	.grid2 {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
 }
-
-	.bottom {
-		float:left;
-		width: 33.33%;
-}
-	.platforms {
-		float:right;
-		width: 66.66%;
-		height: 500px;
-		padding-top: 5%;
-		padding-left: 5%;
-		padding-bottom: 5%;
-		padding-left: 5%;
-		background-image:url(../img/platforms.svg);
-		background-size: 90%, 9px,0%;
-}
-
-.fill {
-	height: 60px;
-	float: right;
-}
-
-.whitetext {
-	padding: 0%;
-}
-
 
 
 h2 {
@@ -324,7 +268,6 @@ h2 {
 	.grid {
 		padding-left: 10%;
 		padding-right: 10%;
-		margin-top: 80px;
 		padding-bottom: 80px;
 }
 
@@ -332,27 +275,15 @@ h2 {
 		height: 80px;
 }
 
-	.grid2 {
-		padding-left: 10%;
-		padding-right: 10%;
-}
-
 	p {
 		font-size:24px;
-}
-
-	.platforms {
-		height: 700px;
+	}
 }
 
 @media only screen and (min-width: 1400px) {
 
 	.fill {
 		height: 130px;
-}
-
-	.whitetext {
-		margin-bottom: 80px;
 }
 
 	h2 {
