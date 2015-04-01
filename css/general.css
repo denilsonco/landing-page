@@ -61,7 +61,7 @@ h1.logo {
 h2{
 	font-size: 40px;
 	color:rgb(255,255,255);
-	text-align:center;
+	text-align:left;
 	margin-top: 0%;
 }
 
@@ -74,12 +74,13 @@ p{
 	text-align:center;
 }
 
+.mail-form {
+	width: 100%;
+	padding: 0 3em;
+}
 
-
-
-form{
-	text-align:center;
-	margin-bottom: 75px;
+.mail-form input {
+	display: inline-block;
 }
 
 #mc_embed_signup .email {
@@ -87,9 +88,9 @@ form{
 	width: 80%;
 	-webkit-appearance: caret;
 	-webkit-appearance: none !important;
-	-webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+	-webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
 	border-color:rgb(0,167,157) !important;
 	border-style: solid;
 	padding-left: 15px;
@@ -98,33 +99,26 @@ form{
 	color:rgb(0,167,157);
 }
 
-.mc-field-group {
-	width: 60%;
-	margin: 0;
-	display: inline-block;
-}
-
 #mc_embed_signup .button {
-    width: 100%;
+  width: 18%;
 	height: 45px;
 	-webkit-appearance: caret;
 	-webkit-appearance: none;
 	background-color: rgb(0,167,157) !important;
-	-webkit-border-radius: 15px;
-  	-moz-border-radius: 15px;
-  	border-radius: 15px;
+	-webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  border-radius:12px;
 	border-style: none;
 	font-family: Montserrat;
-	font-size: 10px;
+	font-size: 16px;
 	color:rgb(255,255,255);
 	text-decoration: none;
 }
 
-.submit-btn {
-	width: 20%;
-	margin: 0;
-	display: inline-block;
+#mc_embed_signup .button:hover {
+	cursor: pointer;
 }
+
 
 input:active{
     outline:none;
@@ -143,6 +137,7 @@ input:active{
 	width: 100%;
 }
 
+
 a {
 	font-family: Montserrat, Helvetica, sans-serif;
 	color:rgb(255,255,255);
@@ -156,6 +151,11 @@ a {
 
 .social img {
 	width: 40px;
+	transition: all 250ms linear;
+}
+
+.social:hover img {
+	opacity: .8;
 }
 
 footer {
@@ -184,14 +184,26 @@ footer {
 
 @media only screen and (min-width: 350px) {
 
-	input[type="submit"] {
+	#mc_embed_signup .button {
 		font-size: 14px;
+		width: 26%
 	}
 
-	input[type="text"] {
-		font-size: 14px
+	#mc_embed_signup .email {
+		font-size: 14px;
+		width: 72%;
+	}
+	.mail-form {
+		width: 100%;
+		padding: 0;
 	}
 
+	.col-2-3 {
+			padding-top: 25%;
+	}
+
+
+}
 
 @media only screen and (min-width: 500px) {
 
@@ -201,8 +213,18 @@ footer {
 
 	input[type="submit"] {
 		font-size: 18px;
+	}
 
-}
+		.mail-form {
+		width: 100%;
+		padding: 0 2em;
+	}
+
+		.col-2-3 {
+			padding-top: 20%;
+		}
+
+
 }
 
 @media only screen and (min-width: 700px) {
@@ -210,6 +232,7 @@ footer {
 	.col-2-3 {
 		width:66.66%;
 		height:600px;
+		padding-top: 8%;
 }
 
 	.col-1-3 {
@@ -227,15 +250,6 @@ footer {
 
 }
 
-
-@media only screen and (min-width: 750px) {
-
-	.col 2-3 {
-		padding-top: 10%;
-}
-
-}
-
 @media only screen and (min-width: 850px) {
 
 	.grid {
@@ -246,6 +260,12 @@ footer {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+	.mail-form {
+		width: 100%;
+		padding: 0 3em;
+	}
+
+
 }
 
 
@@ -255,12 +275,10 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
 
-	.col 1-3 {
-		height: 1500px;
-}
-	.col 2-3 {
-		height:  1500px;
-}
+	.col-2-3 {
+		padding-top: 6em;
+	}
+
 	h1.logo {
 		margin-top: 0px;
 	}
@@ -270,21 +288,21 @@ h2 {
 		padding-right: 10%;
 		margin-top: 20px;
 		padding-bottom: 80px;
-}
+	}
 	p {
 		font-size:20px;
 	}
+
+		.mail-form {
+			width: 100%;
+			padding: 0 4em;
+		}
+
 }
 
 @media only screen and (min-width: 1400px) {
 
-	.fill {
-		height: 130px;
-}
-
 	h2 {
 		margin-top: 120px;
-}
-
-}
+	}
 }
